@@ -1,1 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            transition: all 0.5s ease-in-out;
+        }
+        h1{
+            text-align: center;
+            background-color: #0422ce;
+            color: white;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        table{
+            margin: auto;
+        }
+        #btnCal,#btnCancel{
+            width: 100px;
+            height: 35px;
+            font-weight: bold;
+            color: white;
+            border-radius: 50px;
+        }
+        #btnCal:hover,#btnCancel:hover{
+            width: 130px;
+        }
+        #btnCal{
+            background-color: green;
+        }
+        #btnCancel{
+            background-color: red;
+        }
+        hr{
+            background-color: #0422ce;
+            height: 10px;
+            border: none;
+        }
+        div{
+            text-align: center;
+        }
+        #result{
+            color: red;
+            font-size: 50px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Money Share แชร์เงินกันเถอะ</h1>
+    <table width="500">
+        <tr style="height: 50px;">
+            <td width ="200" style="text-align: right; padding-right: 20px;">
+                ป้อนเงิน
+            </td> 
+            <td>
+                <input type="text" name="" id="money"> บาท
+            </td>
+        </tr>
+        <tr style="height: 50px;">
+            <td width ="200" style="text-align: right; padding-right: 20px;">
+                ป้อนคน
+            </td> 
+            <td>
+                <input type="text" name="" id="person"> คน
+            </td>
+        </tr>
+        <tr style="height: 50px;">
+            <td width ="200" style="text-align: right; padding-right: 20px;">
+                
+            </td> 
+            <td>
+                <button id="btnCal">คำนวณ</button>
+                <button id="btnCancel">ยกเลิก</button>
+        </tr>
+    </table>
+    <hr>
+    <div>
+        แชร์เงินกันเถอะ
+        <span id="result">
+            0.00
+        </span>
+        บาท
+    </div>
 
+    <script src="./js/myscript11.js"></script>
+</body>
+</html>
